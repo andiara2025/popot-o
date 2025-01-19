@@ -1,0 +1,36 @@
+html_code = """
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frase Animada</title>
+    <style>
+        @keyframes pulsar {
+            0% { color: red; transform: scale(1); }
+            50% { color: blue; transform: scale(1.2); }
+            100% { color: green; transform: scale(1); }
+        }
+
+        .animacao {
+            font-size: 50px;
+            font-weight: bold;
+            animation: pulsar 2s infinite;
+            text-align: center;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="animacao">
+        É o grelo!
+    </div>
+</body>
+</html>
+"""
+
+# Salvar o código HTML em um arquivo
+with open("frase_animada.html", "w") as file:
+    file.write(html_code)
+
+print("Arquivo HTML criado com sucesso! Abra 'frase_animada.html' no navegador.")
